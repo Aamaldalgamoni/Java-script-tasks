@@ -1,4 +1,4 @@
-//between 0-1
+// // between 0-1
 
 // function randomNumber(){
 //     console.log(Math.random())
@@ -7,7 +7,7 @@
 
 
 
-//between any 2 numbers i give to him
+// // between any 2 numbers i give to him
 
 // function randomNumber(min, max){
 //     console.log(Math.random()* max-min +min)

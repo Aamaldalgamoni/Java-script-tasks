@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: rgb(184, 205, 228);
+            width: 100vw;
+        }
+
+        .items {
+            position: relative;
+            display: none;
+            flex-direction: column;
+            background-color:  rgb(184, 205, 228);
+            padding: 10px;
+        }
+
+        .items li a {
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-bottom: 1px solid  rgb(184, 205, 228);
+        }
+
+
+
+        .toggler {
+            font-size: 5vh;
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            background-color:  rgb(184, 205, 228);
+            color: white;
+            text-align: right;
+            width: 100%;
+            border: none;
+        }
+
+        @media (min-width: 500px) {
+            .items {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .items li a {
+                border: none;
+            }
+
+            .toggler {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav">
+            <button hidden>
+                <button class="toggler" onclick="toggleMenu()">☰</button>
+            </button>
+            <div class="option" id="option" style="display: inline-block;">
+                <ul class="items" id="items" style="list-style: none; color: white;">
+                    <li>
+                        <a class="nav-item">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-item">Services</a>
+                    </li>
+                    <li>
+                        <a class="nav-item">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-item">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // const items = document.getElementById ('items');
+        function toggleMenu() {
+            const items = document.getElementById("items");
+            if (items.style.display === "flex") {
+                items.style.display = "none";
+            } else {
+                items.style.display = "flex";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
