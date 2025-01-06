@@ -1,0 +1,16 @@
+
+body{
+height: 100vw;
+}
+#btn{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    display: none;
+}

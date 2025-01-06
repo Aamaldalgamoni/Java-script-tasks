@@ -20,7 +20,7 @@ x3.onclick=function(){
 }
 let x4=document.getElementById("Upload Your Image");
 x4.onclick=function(){
-    localStorage.setItem("Upload Your Image",x4.onload);
+    localStorage.setItem("Upload Your Image",x4.file);
 }
 let x5=document.getElementById("Description");
 x5.onkeyup=function(){
